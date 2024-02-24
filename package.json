@@ -2,8 +2,9 @@
   "name": "copy-syntax-in-light",
   "displayName": "Copy Syntax In Light",
   "publisher": "AhmedAdel",
+  "icon": "images/logo.png",
   "description": "",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "engines": {
     "vscode": "^1.86.0"
   },
@@ -13,16 +14,34 @@
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "copy-syntax-in-light.copySyntaxInLight",
-      "title": "Copy Syntax In Light"
-    }]
+    "commands": [
+      {
+        "command": "copy-syntax-in-light.copySyntaxInLight",
+        "title": "Copy Syntax In Light Theme"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "copy-syntax-in-light.copySyntaxInLight",
+          "when": "editorTextFocus",
+          "group": "9_cutcopypaste@3"
+        }
+      ]
+    },
+    "keybindings": [
+      {
+        "command": "copy-syntax-in-light.copySyntaxInLight",
+        "key": "ctrl+shift+c",
+        "mac": "cmd+shift+c",
+        "when": "editorTextFocus"
+      }
+    ]
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/Ahmed-Adel-Morsi/Copy-Syntax-in-Light"
   },
-
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
