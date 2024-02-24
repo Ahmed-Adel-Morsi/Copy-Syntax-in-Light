@@ -1,10 +1,10 @@
 {
   "name": "copy-syntax-in-light",
-  "displayName": "Copy Syntax In Light",
+  "displayName": "Copy Syntax In Light Theme",
   "publisher": "AhmedAdel",
   "icon": "images/logo.png",
-  "description": "",
-  "version": "1.0.1",
+  "description": "Smoothly copy code syntax in light mode, then seamlessly return to your preferred theme in VS Code.",
+  "version": "1.0.2",
   "engines": {
     "vscode": "^1.86.0"
   },

@@ -12,10 +12,13 @@ function activate(context) {
         // Get the current configuration
         const config = vscode.workspace.getConfiguration();
 
+        // Get the current color theme
+        const currentTheme = config.get("workbench.colorTheme");
+
         // Set the color theme to "Default Light+"
         await config.update(
           "workbench.colorTheme",
-          "Default Light+",
+          "Default Light Modern",
           vscode.ConfigurationTarget.Global
         );
 
@@ -30,7 +33,7 @@ function activate(context) {
         // Switch back to dark theme
         await config.update(
           "workbench.colorTheme",
-          "Default Dark+",
+          currentTheme,
           vscode.ConfigurationTarget.Global
         );
       } catch (error) {

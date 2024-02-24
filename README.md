@@ -36,8 +36,13 @@ There are no known issues at the moment. Please report any issues you encounter 
 
 ### 1.0.1
 
-- Second release of the extension.
+- Second release of the extension:
   A Context Menu Icon Button Added And keyboard Shortcut
+
+### 1.0.2
+
+- Now, the extension returns the color theme to your preferred theme.
+- Extension name and description changed.
 
 ## Feedback and Contributing
 
