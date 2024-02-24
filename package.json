@@ -18,6 +18,11 @@
       "title": "Copy Syntax In Light"
     }]
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ahmed-Adel-Morsi/Copy-Syntax-in-Light"
+  },
+
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
