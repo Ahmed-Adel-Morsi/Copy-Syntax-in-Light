@@ -1,51 +1,60 @@
-# copy-syntax-in-light README
+# Copy Syntax in Light
 
-This is a Visual Studio Code extension that allows users to quickly switch to a light color theme, copy the selected text, and switch back to the previous dark color theme.
+Copy code from dark themes with clean, readable formatting for light backgrounds.
+
+## The Problem
+
+When you copy code from VS Code with a dark theme and paste it into a light background (documentation, Notion, emails, etc.), the syntax highlighting disappears or looks wrong. You either manually reformat it or use an external tool.
+
+## The Solution
+
+Select your code, run Copy Syntax in Light, and the extension handles the rest:
+
+1. Temporarily switches to a light theme
+2. Copies your selected code with proper formatting
+3. Switches back to your original theme
+
+Done in seconds. No configuration needed.
 
 ## Features
 
-- Quickly switch to a light color theme.
-- Copy the selected text.
-- Automatically switch back to the previous dark color theme.
+- Copy code with light theme syntax highlighting
+- Automatic theme restoration after copying
+- Works via keyboard shortcut or context menu
+- No setup or configuration required
 
-## Usage
+## How to Use
 
-To use the extension, follow these steps:
+1. Select the code you want to copy
+2. Use **`Ctrl`+`Shift`+`C`** (Windows/Linux) or **`Cmd`+`Shift`+`C`** (Mac) to copy with light theme syntax
+3. Or right-click and select "Copy Syntax in Light" from the context menu
+4. Paste anywhere with your formatting intact
+5. Your original theme is automatically restored
 
-1. Select the text you want to copy.
-2. Run the "Copy Syntax in Light" command from the command palette (`Ctrl+Shift+C`) or via the editor context menu.
-3. The extension will switch to a light color theme, copy the selected text, and switch back to the previous dark color theme automatically.
+## Keyboard Shortcuts
+
+- **`Ctrl`+`Shift`+`C`** (Windows / Linux)
+- **`Cmd`+`Shift`+`C`** (macOS)
 
 ## Requirements
 
-There are no specific requirements or dependencies for this extension.
+- VS Code with at least one light theme installed (most VS Code installations include light themes by default)
 
-## Extension Settings
+## Limitations
 
-This extension does not contribute any additional settings to VS Code.
+- Currently switches to the default light theme.
+- Custom light theme selection may be added in future versions.
 
-## Known Issues
+## Links
 
-There are no known issues at the moment. Please report any issues you encounter on the [GitHub repository](https://github.com/Ahmed-Adel-Morsi/Copy-Syntax-in-Light).
+- [GitHub Repository](https://github.com/Ahmed-Adel-Morsi/Copy-Syntax-in-Light)
+- [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=your-publisher.copy-syntax-in-light)
+- [Report Issues](https://github.com/Ahmed-Adel-Morsi/Copy-Syntax-in-Light/issues)
 
-## Release Notes
+## Contributing
 
-### 0.0.1
+Found a bug? Have a suggestion? Open an issue or submit a pull request on [GitHub](https://github.com/Ahmed-Adel-Morsi/Copy-Syntax-in-Light).
 
-- Initial release of the extension.
+## License
 
-### 1.0.1
-
-- Second release of the extension:
-  A Context Menu Icon Button Added And keyboard Shortcut
-
-### 1.0.2
-
-- Now, the extension returns the color theme to your preferred theme.
-- Extension name and description changed.
-
-## Feedback and Contributing
-
-Your feedback is valuable! If you encounter any issues or have suggestions for improvements, please feel free to [open an issue](https://github.com/Ahmed-Adel-Morsi/Copy-Syntax-in-Light/issues) on GitHub.
-
-If you'd like to contribute to the development of this extension, fork the repository and submit a pull request.
+This project is open source and available under the MIT License.
