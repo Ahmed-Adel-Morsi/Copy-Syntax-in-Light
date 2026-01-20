@@ -4,7 +4,7 @@
   "publisher": "AhmedAdel",
   "icon": "images/logo.png",
   "description": "Smoothly copy code syntax in light mode, then seamlessly return to your preferred theme in VS Code.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "engines": {
     "vscode": "^1.86.0"
   },
